@@ -1,0 +1,53 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    PriorityQueue (0.1.2)
+    byebug (9.0.5)
+    coderay (1.1.1)
+    domain_name (0.5.20160615)
+      unf (>= 0.0.5, < 1.0.0)
+    gds-api-adapters (30.6.0)
+      link_header
+      lrucache (~> 0.1.1)
+      null_logger
+      plek (>= 1.9.0)
+      rack-cache
+      rest-client (~> 1.8.0)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
+    link_header (0.0.8)
+    lrucache (0.1.4)
+      PriorityQueue (~> 0.1.2)
+    method_source (0.8.2)
+    mime-types (2.99.2)
+    netrc (0.11.0)
+    null_logger (0.0.1)
+    plek (1.12.0)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-byebug (3.4.0)
+      byebug (~> 9.0)
+      pry (~> 0.10)
+    rack (1.6.4)
+    rack-cache (1.6.1)
+      rack (>= 0.4)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    slop (3.6.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gds-api-adapters (~> 30.6.0)
+  pry-byebug
+
+BUNDLED WITH
+   1.11.2
