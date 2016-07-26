@@ -20,7 +20,10 @@ module Import
         audit = row["Audit"]
         response = do_request(link_to_base_path(link))
 
-        while response.nil?
+        if link == "https://www.gov.uk/government/publications/key-stage-2-guidance-for-teacher-assessment-moderation"
+        end
+
+        if response.nil?
           redirect = try_redirect(uri)
           if redirect.nil?
             $stderr.puts "Skipping #{link}" # No search data or redirect found
@@ -28,6 +31,9 @@ module Import
           end
 
           response = do_request(link_to_base_path(redirect))
+          if response.nil?
+            $stderr.puts "Skipping #{link} -> #{redirect}"
+          end
         end
 
         unless response.nil?
@@ -42,8 +48,8 @@ module Import
       response = Net::HTTP.get_response(uri)
       case response
       when Net::HTTPRedirection then
-        response['location']
         $stderr.puts "Found redirected content #{uri} -> #{response['location']}"
+        response['location']
       else
         nil
       end
