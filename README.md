@@ -1,6 +1,10 @@
 # Inventory fetcher
 
-Extracts data from inventories of GOV.UK content. The text comes from [https://github.com/alphagov/rummager]()
+This repo contains a number of unmaintained scripts for extracting text data from inventories of GOV.UK content.
+
+The text comes from [https://github.com/alphagov/rummager]()
+
+See also: [https://github.com/alphagov/govuk-lda-tagger](GOV.UK LDA Tagger)
 
 ## Data files
 
