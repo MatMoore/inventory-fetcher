@@ -1,6 +1,6 @@
 # Inventory fetcher
 
-This repo contains some unmaintained scripts for extracting text data from inventories of GOV.UK content and feeding it into [Gensim](https://radimrehurek.com/gensim/).
+Unmaintained scripts for extracting text data from inventories of GOV.UK content and feeding it into [Gensim](https://radimrehurek.com/gensim/).
 
 The text comes from [Rummager](https://github.com/alphagov/rummager), the GOV.UK search API.
 
