@@ -4,7 +4,7 @@ This repo contains a number of unmaintained scripts for extracting text data fro
 
 The text comes from [https://github.com/alphagov/rummager]()
 
-See also: [https://github.com/alphagov/govuk-lda-tagger](GOV.UK LDA Tagger)
+See also: [GOV.UK LDA Tagger](https://github.com/alphagov/govuk-lda-tagger)
 
 ## Data files
 
